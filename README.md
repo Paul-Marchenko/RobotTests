@@ -11,6 +11,6 @@
 - IntelliBot@SeleniumLibrary
 
 # Run tests:
-robot TestCases\test_case_1.robot
+`robot TestCases\test_case_1.robot`
 
 
