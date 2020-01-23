@@ -1,5 +1,5 @@
 *** Settings ***
-Library SeleniumLibrary
+Library    SeleniumLibrary
 
 *** Variables ***
 ${browser}  chrome
@@ -25,8 +25,3 @@ TestingInputBox
     close browser
 
 *** Keywords ***
-loginToApplication
-    click link  xpath://a[@class='ico-login']
-    input text  id:Email    ppp@gmail.com
-    input text  id:Password    1234
-    click element   xpath://input[@class=button-1 login-button']
