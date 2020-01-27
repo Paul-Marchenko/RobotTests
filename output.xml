@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20200122 09:52:43.534" rpa="false">
-<suite id="s1" name="InputBox" source="C:\Users\pmarchenko\Documents\Ptestpy\RobotTests\TestCases\InputBox.robot">
-<test id="s1-t1" name="TestingInputBox">
-<kw name="open browser">
+<robot generator="Robot 3.1.2 (Python 3.8.0 on win32)" generated="20200127 08:20:04.844" rpa="false">
+<suite id="s1" name="Close All.Robot" source="C:\Users\pmarchenko\Documents\Ptestpy\RobotTests\testCases\close_all.robot.robot">
+<test id="s1-t1" name="MyTestCase">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
 <arguments>
-<arg>${url}</arg>
-<arg>${browser}</arg>
+<arg>http://demowebshop.tricentis.com/register</arg>
+<arg>chrome</arg>
 </arguments>
-<msg timestamp="20200122 09:52:43.706" level="FAIL">No keyword with name 'open browser' found.</msg>
-<status status="FAIL" starttime="20200122 09:52:43.706" endtime="20200122 09:52:43.706"></status>
+<msg timestamp="20200127 08:20:08.280" level="INFO">Opening browser 'chrome' to base url 'http://demowebshop.tricentis.com/register'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20200127 08:20:08.336" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20200127 08:20:08.336" endtime="20200127 08:20:08.336"></status>
 </kw>
-<status status="FAIL" starttime="20200122 09:52:43.703" endtime="20200122 09:52:43.707" critical="yes">No keyword with name 'open browser' found.</status>
+<msg timestamp="20200127 08:20:08.514" level="FAIL">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" starttime="20200127 08:20:08.280" endtime="20200127 08:20:08.515"></status>
+</kw>
+<status status="FAIL" starttime="20200127 08:20:08.279" endtime="20200127 08:20:08.515" critical="yes">WebDriverException: Message: 'chromedriver' executable needs to be in PATH. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
 </test>
-<status status="FAIL" starttime="20200122 09:52:43.556" endtime="20200122 09:52:43.709"></status>
+<status status="FAIL" starttime="20200127 08:20:04.850" endtime="20200127 08:20:08.517"></status>
 </suite>
 <statistics>
 <total>
@@ -22,10 +31,9 @@
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" id="s1" name="InputBox">InputBox</stat>
+<stat pass="0" fail="1" id="s1" name="Close All.Robot">Close All.Robot</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20200122 09:52:43.455" level="ERROR">Error in file 'C:\Users\pmarchenko\Documents\Ptestpy\RobotTests\TestCases\InputBox.robot': Non-existing setting 'Library SeleniumLibrary'.</msg>
 </errors>
 </robot>
