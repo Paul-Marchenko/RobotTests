@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 ${browser}  chrome
-${url}  http://opensource-demo.organgehrmlive.com/
+${url}  https://opensource-demo.organgehrmlive.com/
 
 *** Test Cases ***
 LoginTest
