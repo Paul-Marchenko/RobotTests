@@ -1,6 +1,5 @@
 *** Settings ***
 Library    SeleniumLibrary
-Resource     ../Resources/resources.robot
 
 *** Variables ***
 ${browser}  chrome
@@ -18,3 +17,12 @@ TC1
 
 
     close browser
+
+
+*** Keywords ***
+launchBrowser
+    [Arguments]    ${appurl}   ${appbrowser}
+    open browser    ${appurl}   ${appbrowser}
+    maximize browser window
+    ${title}= get title
+    [[Return]  ${title}
